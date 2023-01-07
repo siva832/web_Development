@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Document</title>
+</head>
+<style>
+  h5{
+    margin-top: 20px;
+    font-weight: 200;
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: rgb(27, 25, 25);
+  }
+  h3{
+    color: #009688;
+    font-weight: bold;
+  }
+  h3{
+    margin-top: 20px;
+    font-weight: 200;
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: rgb(27, 25, 25);
+  }
+  p{
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 300;
+    color: #86939e;
+  }
+  h2{
+    margin-top: 20px;
+    font-weight: 200;
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: rgb(27, 25, 25);
+  }
+    .container {
+        width: 100%;
+    display: flex; 
+}
+.image
+{
+    width: 120%;
+}
+img {
+    width: 100%;
+} 
+
+.text {
+  font-size: 20px;
+  padding-left: 20px;
+}
+#hello{
+  width:9%;
+}
+button{
+  font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    padding: 10px 20px;
+    letter-spacing: 2px;
+    background-color: #009688;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 2px 10px rgb(0 0 0 / 50%);
+
+}
+
+</style>
+
+   <body>
+    <div class="container">
+        <div class="image">
+          <img id="helo"src="https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/9803279/2019/5/27/6661d579-12ae-456b-b8f2-e78e5256a99c1558948436173-Apple-AirPods-with-Charging-Case-2nd-Gen-White-3831558948435-1.jpg">
+        </div>
+      <div class="text">
+        <div>
+        <h1>White 2nd Gen AirPods with Charging Case</h1>
+       <h2>Apple</h2>
+       <h3>Price: Rs 14999 </h3>
+       <h4>Desciption</h4>
+       <p>AirPods with Charging Case: More than 24 hours listening time,3 up to 18 hours talk time8. AirPods (single charge): Up to 5 hours listening time,1 up to 3 hours talk time2. 15 minutes in the case equals up to 3 hours listening time4 or up to 2 hours talk time. Warranty: 1 year. Warranty provided by Brand/Manufacturer</p>
+       <h5>Product Preview</h5>
+      </div>
+      <div>
+        <img id="hello" src="https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/9803279/2019/5/27/6661d579-12ae-456b-b8f2-e78e5256a99c1558948436173-Apple-AirPods-with-Charging-Case-2nd-Gen-White-3831558948435-1.jpg">
+        <img id="hello"  src="https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/9803279/2019/5/27/9b14396e-0ee1-46b4-833c-4a2c35b5ce661558948436160-Apple-AirPods-with-Charging-Case-2nd-Gen-White-3831558948435-2.jpg">
+        <img id="hello" src="https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/9803279/2019/5/27/27569983-fada-4874-9306-14c945c234781558948436148-Apple-AirPods-with-Charging-Case-2nd-Gen-White-3831558948435-3.jpg">
+        
+      </div>
+      
+    </div>
+    </div>
+  <center><button>Add to Cart</button></center> 
+  <script>
+   
+   var a = document.getElementsByTagName("img");
+   console.log(a.length)
+   for(let i=0; i<a.length; i++){
+    a[i].addEventListener("click",rplace_img);
+    a[i].addEventListener("mouseover",active_class);
+    a[i].addEventListener("mouseout",deactive);
+
+   }
+   function rplace_img() {
+    document.getElementById("helo").src = this.src;
+   
+   }
+   function active_class(){
+    this.className = "active";
+   }
+   function deactive(){
+    thisclassName = "";
+
+   }
+  
+  </script>
+ 
+    
+</body>
+</html>
